@@ -35,7 +35,13 @@ More features are coming soon like auto comparison of local and remote repositor
 The clone command allows users to clone a GitHub repository and store it in the proper directory structure in the local file system. The command takes two parameters: username and repository.
 
 ```bash
-$ gcm clone username repository
+$ ./gcm.py clone username repository
+```
+
+Example:
+
+```bash
+$ ./gcm.py clone floriangrousset GitCodeManager
 ```
 
 ### Listing cloned repositories with "list"
@@ -43,7 +49,7 @@ $ gcm clone username repository
 The list command allows users to display the directory tree of cloned repositories. The command doesn't take any parameters. It also displays the latest commit checksum of each local and remote repository.
 
 ```bash
-$ gcm list
+$ ./gcm.py list
 ```
 
 Output:
